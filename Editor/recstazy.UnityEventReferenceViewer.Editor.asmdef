@@ -1,0 +1,11 @@
+{
+  "name": "recstazy.UnityEventReferenceViewer.Editor",
+  "rootNamespace": "UnityEventReferenceViewer.Editor",
+  "references": [],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "autoReferenced": true,
+  "defineConstraints": []
+}
