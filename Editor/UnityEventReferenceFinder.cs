@@ -40,7 +40,10 @@ namespace UnityEventReferenceViewer
                 var evnts = info.DeclaredFields.Where(f => f.FieldType.IsSubclassOf(typeof(UnityEventBase))).ToList();
                 foreach (var e in evnts)
                 {
-                    events.Add(b, e.GetValue(b) as UnityEventBase);
+                    if (!events.ContainsKey(b))
+                        events.Add(b, e.GetValue(b) as UnityEventBase);
+                    else 
+                        Debug.LogWarning("UnityEventBase already exists for " + b.name);
                 }
             }
 
